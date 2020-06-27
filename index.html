@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="text-center">A SIMPLE CALCULATOR</h1>
+      <div id="calculator">
+        <input
+          class="form-control result"
+          id="result"
+          type="text"
+          name="display"
+        />
+        <div id="keyboard">
+          <button class="clearBtn" id="clear" onclick="clrResult()">C</button>
+          <button class="clearBack" id="backspace" onclick="preValue()">
+            ‎⌫
+          </button>
+          <button class="btn" onclick="getSqureRoot()" id="√">√</button>
+          <button class="btn" onclick="getNumber('/')" id="/">&#247;</button>
+          <button class="btn" onclick="getNumber('7')" id="7">7</button>
+          <button class="btn" onclick="getNumber('8')" id="8">8</button>
+          <button class="btn" onclick="getNumber('9')" id="9">9</button>
+          <button class="btn" onclick="getNumber('*')" id="*">&times;</button>
+          <button class="btn" onclick="getNumber('4')" id="4">4</button>
+          <button class="btn" onclick="getNumber('5')" id="5">5</button>
+          <button class="btn" onclick="getNumber('6')" id="6">6</button>
+          <button class="btn" onclick="getNumber('-')" id="-">-</button>
+          <button class="btn" onclick="getNumber('1')" id="1">1</button>
+          <button class="btn" onclick="getNumber('2')" id="2">2</button>
+          <button class="btn" onclick="getNumber('3')" id="3">3</button>
+          <button class="btn" onclick="getNumber('+')" id="+">+</button>
+          <button class="btn" id="cos" onclick="getCos()">Cos</button>
+          <button class="btn" onclick="getNumber('0')" id="0">0</button>
+          <button class="btn" id="sin" onclick="getSin()">Sin</button>
+          <button class="btn" id="=" onclick="getResult()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
